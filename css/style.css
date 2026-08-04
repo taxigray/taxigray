@@ -600,3 +600,36 @@ footer{
     transform:translateY(-5px);
 
 }
+footer{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+footer p{
+
+    margin:10px 0;
+
+}
+
+footer a{
+
+    color:#FFD500;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+footer a:hover{
+
+    text-decoration:underline;
+
+}
