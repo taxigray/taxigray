@@ -236,7 +236,14 @@ h2{
     border-radius:15px;
 
 }
+.photos img{
+    transition:0.3s;
+}
 
+
+.photos img:hover{
+    transform:scale(1.05);
+}
 
 
 /* GOOGLE MAP */
