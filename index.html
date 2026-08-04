@@ -256,6 +256,25 @@ Contactez TAXI GRAY directement.
 
 </footer>
 
+<script>
 
+const bouton = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+bouton.addEventListener("click", function(){
+
+    if(menu.style.display === "flex"){
+
+        menu.style.display = "none";
+
+    } else {
+
+        menu.style.display = "flex";
+
+    }
+
+});
+
+</script>
 </body>
 </html>
