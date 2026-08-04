@@ -37,9 +37,15 @@ body{
 
 
 .logo{
+
     height:70px;
-    width:auto;
-    object-fit:contain;
+
+    background:white;
+
+    padding:8px 12px;
+
+    border-radius:10px;
+
 }
 
 
