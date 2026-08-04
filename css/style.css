@@ -38,13 +38,9 @@ body{
 
 .logo{
 
-    height:100px;
+    height:90px;
 
-    background:white;
-
-    padding:8px 12px;
-
-    border-radius:10px;
+    width:auto;
 
 }
 
