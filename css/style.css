@@ -489,3 +489,34 @@ footer{
     }
 
 }
+.hero-services{
+
+    margin-top:25px;
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.btn.secondaire{
+
+    background:white;
+
+    color:#111;
+
+}
