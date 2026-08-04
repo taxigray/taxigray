@@ -73,11 +73,8 @@ nav a:hover{
     linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
     url("../images/taxi-1.jpg");
 
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-
-    background-color:#111;
+    background-size:cover;
+    background-position:center center;
 
     display:flex;
     align-items:center;
