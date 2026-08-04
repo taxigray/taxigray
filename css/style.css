@@ -434,3 +434,47 @@ footer{
     color:#FFD400;
 
 }
+/* BOUTON APPEL MOBILE */
+
+.appel-mobile{
+
+    display:none;
+
+}
+
+
+@media(max-width:700px){
+
+    .appel-mobile{
+
+        display:block;
+
+        position:fixed;
+
+        bottom:20px;
+
+        left:20px;
+
+        right:20px;
+
+        background:#FFD400;
+
+        color:#111;
+
+        text-align:center;
+
+        padding:15px;
+
+        border-radius:30px;
+
+        font-weight:bold;
+
+        text-decoration:none;
+
+        z-index:999;
+
+        box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+    }
+
+}
