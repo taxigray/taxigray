@@ -348,28 +348,48 @@ footer{
 
     .header .container{
 
+        flex-direction:row;
+
+        justify-content:space-between;
+
+    }
+
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+
+    .menu{
+
+        display:none;
+
+        position:absolute;
+
+        top:90px;
+
+        left:0;
+
+        width:100%;
+
+        background:#111;
+
         flex-direction:column;
 
-    }
+        text-align:center;
 
+        padding:20px;
 
-    nav{
-
-        margin-top:15px;
-
-    }
-
-
-    nav a{
-
-        margin:0 10px;
+        z-index:1000;
 
     }
 
 
-    .hero{
+    .menu a{
 
-        min-height:500px;
+        margin:15px 0;
 
     }
 
@@ -379,6 +399,9 @@ footer{
         font-size:32px;
 
     }
+
+
+}
 
 
     .hero p{
