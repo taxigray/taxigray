@@ -635,10 +635,6 @@ footer a:hover{
     text-decoration:underline;
 
 }
-.logo{
-    height:105px !important;
-    width:auto !important;
-}
 .zone-intervention .btn {
     display: block;
     width: fit-content;
