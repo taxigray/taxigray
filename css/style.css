@@ -738,3 +738,19 @@ footer a:hover{
 .email:hover {
     background:#555;
 }
+.btn.whatsapp {
+    background:#25D366;
+    color:white;
+    display:block;
+    width:fit-content;
+    margin:10px auto 0;
+}
+
+.btn.whatsapp:hover {
+    background:#1ebe5d;
+}
+
+.btn.whatsapp i {
+    font-size:20px;
+    margin-right:8px;
+}
