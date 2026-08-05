@@ -704,4 +704,11 @@ footer a:hover{
 
 .whatsapp:hover {
     background: #1ebe5d;
+}.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.whatsapp:hover {
+    background: #1ebe5d;
 }
