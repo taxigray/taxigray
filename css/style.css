@@ -730,3 +730,11 @@ footer a:hover{
 .email:hover {
     background:#555;
 }
+.email {
+    background:#333;
+    color:white;
+}
+
+.email:hover {
+    background:#555;
+}
