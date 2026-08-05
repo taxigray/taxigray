@@ -694,16 +694,16 @@ footer a:hover{
     margin: 10px auto 0;
     cursor: pointer;
 }
-/* BOUTON WHATSAPP ACCESSIBLE */
+/* Correction contraste bouton WhatsApp */
 
-a.btn.whatsapp {
-    background-color: #128C7E !important;
-    color: white !important;
-    display: block;
-    width: fit-content;
-    margin: 10px auto 0;
+.form-reservation a.btn.whatsapp {
+    background: #075E54 !important;
+    background-color: #075E54 !important;
+    color: #ffffff !important;
+    border: none !important;
 }
 
-a.btn.whatsapp:hover {
-    background-color: #075E54 !important;
+.form-reservation a.btn.whatsapp:hover {
+    background: #054C45 !important;
+    color: #ffffff !important;
 }
