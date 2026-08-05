@@ -728,7 +728,25 @@ footer a:hover{
 .email:hover {
     background:#555;
 }
+/* Bouton WhatsApp */
 
+.btn.whatsapp {
+    background:#075E54;
+    color:white;
+    display:block;
+    width:fit-content;
+    margin:10px auto 0;
+    border:none;
+}
+
+.btn.whatsapp:hover {
+    background:#054C45;
+}
+
+.btn.whatsapp i {
+    font-size:20px;
+    margin-right:8px;
+}
 .btn.whatsapp:hover {
     background:#1ebe5d;
 }
