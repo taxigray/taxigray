@@ -694,21 +694,16 @@ footer a:hover{
     margin: 10px auto 0;
     cursor: pointer;
 }
-.whatsapp {
-    background: #25D366;
-    color: white;
+/* BOUTON WHATSAPP */
+
+a.btn.whatsapp {
+    background-color: #25D366 !important;
+    color: white !important;
     display: block;
     width: fit-content;
     margin: 10px auto 0;
 }
 
-.whatsapp:hover {
-    background: #1ebe5d;
-}.whatsapp {
-    background: #25D366;
-    color: white;
-}
-
-.whatsapp:hover {
-    background: #1ebe5d;
+a.btn.whatsapp:hover {
+    background-color: #1ebe5d !important;
 }
