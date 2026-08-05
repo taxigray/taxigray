@@ -760,3 +760,13 @@ button.btn.whatsapp img {
     transform: translateY(-8px);
     box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
+/* Animation bloc avis clients */
+
+.avis-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avis-box:hover {
+    transform: translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
