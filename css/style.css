@@ -639,3 +639,8 @@ footer a:hover{
     height:105px !important;
     width:auto !important;
 }
+.zone-intervention .btn {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+}
