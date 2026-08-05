@@ -738,3 +738,7 @@ button.btn.whatsapp img {
     vertical-align:middle;
     margin-right:8px;
 }
+.hero .container{
+    position:relative;
+    z-index:2;
+}
