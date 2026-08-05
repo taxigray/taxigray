@@ -696,17 +696,7 @@ footer a:hover{
 }
 /* Correction contraste bouton WhatsApp */
 
-.form-reservation a.btn.whatsapp {
-    background: #075E54 !important;
-    background-color: #075E54 !important;
-    color: #ffffff !important;
-    border: none !important;
-}
 
-.form-reservation a.btn.whatsapp:hover {
-    background: #054C45 !important;
-    color: #ffffff !important;
-}
 .form-reservation select {
     width:100%;
     padding:12px;
@@ -737,13 +727,6 @@ footer a:hover{
 
 .email:hover {
     background:#555;
-}
-.btn.whatsapp {
-    background:#25D366;
-    color:white;
-    display:block;
-    width:fit-content;
-    margin:10px auto 0;
 }
 
 .btn.whatsapp:hover {
