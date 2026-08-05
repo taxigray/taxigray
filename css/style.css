@@ -730,17 +730,24 @@ footer a:hover{
 }
 /* Bouton WhatsApp */
 
-.btn.whatsapp {
-    background:#128C7E;
-    color:white;
+button.btn.whatsapp {
+    background:#075E54 !important;
+    color:#ffffff !important;
+    border:none;
     display:block;
     width:fit-content;
     margin:10px auto 0;
-    border:none;
 }
 
-.btn.whatsapp:hover {
-    background:#054C45;
+button.btn.whatsapp:hover {
+    background:#054C45 !important;
+}
+
+button.btn.whatsapp img {
+    width:22px;
+    height:22px;
+    vertical-align:middle;
+    margin-right:8px;
 }
 
 /* Logo WhatsApp dans le bouton */
@@ -750,8 +757,4 @@ footer a:hover{
     height:22px;
     vertical-align:middle;
     margin-right:8px;
-}
-button.btn.whatsapp {
-    background:#075E54 !important;
-    color:white !important;
 }
