@@ -742,3 +742,11 @@ button.btn.whatsapp img {
     position:relative;
     z-index:2;
 }
+.cards .card {
+    display:flex;
+    flex-direction:column;
+}
+
+.cards .card .btn {
+    margin-top:auto;
+}
