@@ -715,3 +715,18 @@ footer a:hover{
     font-size:16px;
     background:white;
 }
+.contact-buttons {
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.email {
+    background:#333;
+    color:white;
+}
+
+.email:hover {
+    background:#555;
+}
