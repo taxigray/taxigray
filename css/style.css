@@ -109,12 +109,11 @@ nav a:hover{
 }
 
 
-.hero h2{
+.hero h1{
     font-size:45px;
     color:white;
     margin-bottom:20px;
 }
-
 
 .hero p{
     max-width:750px;
