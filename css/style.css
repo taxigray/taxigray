@@ -671,8 +671,8 @@ footer a:hover{
 .reservation {
     text-align: center;
     padding: 60px 0;
+    scroll-margin-top:20px;
 }
-
 .form-reservation {
     max-width: 600px;
     margin: 30px auto 0;
