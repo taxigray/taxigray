@@ -84,7 +84,17 @@ nav a:hover{
     color:white;
     text-align:center;
 }
+@media(max-width:700px){
 
+    .hero{
+
+        min-height:450px;
+
+        background-position:center center;
+
+    }
+
+}
 
 .hero .container{
     width:100%;
