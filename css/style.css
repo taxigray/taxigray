@@ -120,7 +120,12 @@ nav a:hover{
     margin:auto;
     font-size:20px;
 }
-
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
 
 
 /* BOUTONS */
