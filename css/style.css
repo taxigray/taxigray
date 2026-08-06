@@ -796,3 +796,10 @@ button.btn.whatsapp img {
     height:120px !important;
     width:auto !important;
 }
+@media(max-width:700px){
+
+    .menu.ouvert{
+        display:flex;
+    }
+
+}
