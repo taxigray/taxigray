@@ -498,7 +498,6 @@ Nous intervenons notamment à Châtillon-la-Palud, Ambérieu-en-Bugey, Meximieux
 
 
 <section id="contact" class="reservation">
-<form id="formulaire-reservation" class="form-reservation">
 
 <div class="container">
 
@@ -510,7 +509,8 @@ Nous vous répondrons rapidement avec une estimation adaptée à votre trajet.
 </p>
 
 
-<form class="form-reservation">
+<form id="formulaire-reservation" class="form-reservation">
+
 
 <div>
 <label for="depart">📍 Départ</label>
@@ -529,13 +529,16 @@ Nous vous répondrons rapidement avec une estimation adaptée à votre trajet.
 <input type="date" id="date" name="date">
 </div>
 
+
 <div>
 <label for="heure">⏰ Heure souhaitée</label>
 <input type="time" id="heure" name="heure">
 </div>
 
+
 <div>
 <label for="passagers">👥 Nombre de passagers</label>
+
 <select id="passagers" name="passagers">
 <option value="">Choisir</option>
 <option value="1">1 passager</option>
@@ -544,10 +547,13 @@ Nous vous répondrons rapidement avec une estimation adaptée à votre trajet.
 <option value="4">4 passagers</option>
 <option value="5 ou plus">5 ou plus</option>
 </select>
-</div>  
+
+</div>
+
 
 <div>
 <label for="motif">🎯 Motif du trajet</label>
+
 <select id="motif" name="motif">
 
 <option value="">Choisir</option>
@@ -558,24 +564,38 @@ Nous vous répondrons rapidement avec une estimation adaptée à votre trajet.
 <option value="Autre">Autre</option>
 
 </select>
-</div>  
+
+</div>
+
 
 <div>
 <label for="message">💬 Informations supplémentaires</label>
-<textarea id="message" name="message" placeholder="Exemple : adresse précise, étage, bagages, fauteuil roulant, détails du transport CPAM..."></textarea>
+
+<textarea id="message" name="message" placeholder="Adresse précise, étage, bagages, fauteuil roulant..."></textarea>
+
 </div>
+
 
 
 <div class="contact-buttons">
 
+
 <button type="button" class="btn whatsapp" onclick="envoyerWhatsApp()">
+
 <img src="images/whatsapp.webp" alt="WhatsApp">
+
 Envoyer ma demande par WhatsApp
+
 </button>
-  
+
+
+
 <button type="button" class="btn email" onclick="envoyerMail()">
+
 📧 Envoyer par mail
+
 </button>
+
 
 </div>
 
@@ -585,7 +605,6 @@ Envoyer ma demande par WhatsApp
 </div>
 
 </section>
-
 <footer>
 
 
