@@ -803,3 +803,10 @@ button.btn.whatsapp img {
     }
 
 }
+@media(max-width:700px){
+
+    .menu.ouvert{
+        display:flex !important;
+    }
+
+}
