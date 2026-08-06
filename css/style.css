@@ -835,3 +835,10 @@ button.btn.whatsapp img {
     }
 
 }
+.hero-buttons .secondaire{
+    display:inline-block !important;
+    background:white !important;
+    color:#111 !important;
+    visibility:visible !important;
+    opacity:1 !important;
+}
