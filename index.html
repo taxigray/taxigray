@@ -652,15 +652,11 @@ const menu = document.querySelector(".menu");
 bouton.addEventListener("click", function(){
 
 
-if(menu.style.display === "flex"){
+bouton.addEventListener("click", function(){
 
-menu.style.display = "none";
+menu.classList.toggle("ouvert");
 
-} else {
-
-menu.style.display = "flex";
-
-}
+});
 
 
 });
