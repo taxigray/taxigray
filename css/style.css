@@ -1,10 +1,5 @@
 html{
     scroll-behavior:smooth;
-    scroll-padding-top:120px;
-}
-
-section{
-    scroll-margin-top:120px;
 }
 /* RESET */
 *{
