@@ -941,3 +941,43 @@ gap:8px;
 }
 
 }
+/* FOOTER MOBILE COMPACT */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+
+footer .container{
+    padding:0;
+}
+
+footer p{
+    margin:6px 0;
+    line-height:1.4;
+}
+
+footer a{
+    color:#FFD500;
+    text-decoration:none;
+}
+
+
+@media(max-width:700px){
+
+footer{
+    padding:20px 10px;
+    font-size:13px;
+}
+
+footer p{
+    margin:4px 0;
+}
+
+.footer-links{
+    line-height:1.8;
+}
+
+}
