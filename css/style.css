@@ -114,6 +114,14 @@ nav a:hover{
     color:white;
     margin-bottom:20px;
 }
+@media (max-width:700px){
+
+    .hero h1{
+        font-size:28px;
+        line-height:1.2;
+    }
+
+}
 
 .hero p{
     max-width:750px;
@@ -841,12 +849,4 @@ button.btn.whatsapp img {
     color:#111 !important;
     visibility:visible !important;
     opacity:1 !important;
-}
-@media (max-width:700px){
-
-    .hero .titre-accueil{
-        font-size:28px !important;
-        line-height:1.25;
-    }
-
 }
