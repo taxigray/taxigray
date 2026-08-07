@@ -844,8 +844,8 @@ button.btn.whatsapp img {
 }
 @media (max-width:700px){
 
-    .titre-accueil{
-        font-size:28px;
+    .hero .titre-accueil{
+        font-size:28px !important;
         line-height:1.25;
     }
 
