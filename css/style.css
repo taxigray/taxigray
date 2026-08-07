@@ -91,16 +91,6 @@ nav a:hover{
 
     color:white;
     text-align:center;
-}
-@media(max-width:700px){
-
-    .hero{
-
-        min-height:450px;
-
-        background-position:center center;
-
-    }
 
 }
 
@@ -108,19 +98,10 @@ nav a:hover{
     width:100%;
 }
 
-
 .hero h1{
     font-size:45px;
     color:white;
     margin-bottom:20px;
-}
-@media (max-width:700px){
-
-    .hero h1{
-        font-size:28px;
-        line-height:1.2;
-    }
-
 }
 
 .hero p{
@@ -128,6 +109,7 @@ nav a:hover{
     margin:auto;
     font-size:20px;
 }
+
 .hero-buttons{
     display:flex;
     justify-content:center;
@@ -135,7 +117,39 @@ nav a:hover{
     flex-wrap:wrap;
 }
 
+/* MOBILE */
 
+@media (max-width:700px){
+
+    .hero{
+        min-height:500px;
+        background-position:center center;
+        padding:60px 20px;
+    }
+
+    .hero h1{
+        font-size:28px;
+        line-height:1.2;
+        margin-bottom:15px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .hero .btn{
+        width:100%;
+        max-width:320px;
+        text-align:center;
+    }
+
+}
 /* BOUTONS */
 
 .btn{
