@@ -538,6 +538,20 @@ footer{
     }
 
 }
+@media(max-width:700px){
+
+.appel-mobile{
+    bottom:15px;
+    left:15px;
+    right:15px;
+    padding:14px;
+}
+
+body{
+    padding-bottom:80px;
+}
+
+}
 .hero-services{
 
     margin-top:25px;
