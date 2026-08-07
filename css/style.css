@@ -885,14 +885,14 @@ footer p{
 
 @media(max-width:700px){
 
-    footer{
-        padding:25px 20px;
-        font-size:14px;
-    }
+footer{
+    padding:20px 15px 80px;
+    font-size:13px;
+}
 
-    footer p{
-        margin:5px 0;
-    }
+footer p{
+    margin:4px 0;
+}
 
 }
 /* LIENS FOOTER */
