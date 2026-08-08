@@ -956,9 +956,9 @@ footer a:hover{
 }
 .zone-card a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .zone-card a:hover {
-    text-decoration: underline;
+    text-decoration: none !important;
 }
