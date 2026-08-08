@@ -902,35 +902,36 @@ footer a:hover {
     ----------------------------------------------------- */
 
 .appel-mobile {
-    display: block;
+    display: block !important;
 
-    position: fixed;
+    position: fixed !important;
 
-    bottom: 15px;
-    left: 10px;
-    right: 10px;
+    bottom: 15px !important;
+    left: 0 !important;
+    right: 0 !important;
 
-    background: #FFD400;
-    color: #111;
+    width: 100% !important;
+    max-width: none !important;
+
+    box-sizing: border-box !important;
+
+    background: #FFD400 !important;
+    color: #111 !important;
 
     text-align: center;
 
-    padding: 14px;
+    padding: 14px 20px;
 
-    border-radius: 30px;
+    border-radius: 0;
 
     font-weight: bold;
     font-size: 16px;
 
     text-decoration: none;
 
-    z-index: 999;
+    z-index: 9999;
 
-    box-shadow: 0 6px 18px rgba(0,0,0,.25);
-
-    transition:
-        transform .2s ease,
-        box-shadow .2s ease;
+    box-shadow: 0 -3px 15px rgba(0,0,0,.20);
 }
    /* Effet au toucher */
 
