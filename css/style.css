@@ -518,14 +518,12 @@ h2 {
 
 
 /* =========================================================
-   RÉSERVATION
+RÉSERVATION
 ========================================================= */
 
 .reservation {
     text-align: center;
-
     padding: 60px 0;
-
     scroll-margin-top: 20px;
 }
 
@@ -562,11 +560,12 @@ h2 {
 .form-reservation select,
 .form-reservation textarea {
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
 
     padding: 12px;
 
     border: 1px solid #ccc;
-
     border-radius: 8px;
 
     font-family: inherit;
@@ -575,14 +574,23 @@ h2 {
 
     background: white;
 
+    box-sizing: border-box;
+
     transition:
         border-color .2s ease,
         box-shadow .2s ease;
 }
 
+.form-reservation input[type="date"],
+.form-reservation input[type="time"] {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
 .form-reservation textarea {
     min-height: 120px;
-
     resize: vertical;
 }
 
@@ -599,10 +607,8 @@ h2 {
 
 .form-reservation .btn {
     margin: 10px auto 0;
-
     cursor: pointer;
 }
-
 
 /* =========================================================
    WHATSAPP
