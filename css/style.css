@@ -537,13 +537,15 @@ RÉSERVATION
 
     gap: 20px;
 
-    padding: 30px;
+    padding: 32px;
 
     background: white;
 
-    border-radius: 16px;
+    border: 1px solid #eeeeee;
 
-    box-shadow: 0 6px 24px rgba(0,0,0,.07);
+    border-radius: 18px;
+
+    box-shadow: 0 8px 28px rgba(0,0,0,.08);
 }
 
 .form-reservation label {
