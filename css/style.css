@@ -899,34 +899,37 @@ footer a:hover {
        APPEL MOBILE
     ----------------------------------------------------- */
 
-    .appel-mobile {
-        display: block;
+.appel-mobile {
+    display: block;
 
-        position: fixed;
+    position: fixed;
 
-        bottom: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
 
-        left: 15px;
-        right: 15px;
+    background: #FFD400;
+    color: #111;
 
-        background: #FFD400;
+    text-align: center;
 
-        color: #111;
+    padding: 15px;
 
-        text-align: center;
+    border-radius: 30px;
 
-        padding: 14px;
+    font-weight: bold;
+    font-size: 16px;
 
-        border-radius: 30px;
+    text-decoration: none;
 
-        font-weight: bold;
+    z-index: 999;
 
-        text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,.25);
 
-        z-index: 999;
-
-        box-shadow: 0 5px 15px rgba(0,0,0,.3);
-    }
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
 
     body {
         padding-bottom: 80px;
