@@ -985,3 +985,10 @@ footer a:hover {
     box-shadow: none !important;
     padding: 0 !important;
 }
+.header {
+    background: transparent;
+}
+
+.header .container {
+    background: transparent;
+}
