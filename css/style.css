@@ -993,20 +993,3 @@ footer a:hover {
         animation: none !important;
     }
 }
-@media (max-width: 700px) {
-
-    .phone-mobile {
-        left: 10px !important;
-        right: 10px !important;
-        width: auto !important;
-        box-sizing: border-box !important;
-
-        bottom: 15px !important;
-
-        text-align: center;
-        padding: 14px 20px;
-
-        border-radius: 30px;
-    }
-
-}
