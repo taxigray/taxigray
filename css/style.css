@@ -970,3 +970,18 @@ footer a:hover {
     }
 
 }
+
+/* Correction logo header */
+.header .logo {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: block;
+}
+
+.header a[aria-label="Retour à l'accueil"] {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
