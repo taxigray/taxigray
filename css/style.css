@@ -993,21 +993,3 @@ footer a:hover {
     }
 }
 @media (max-width: 700px) {
-
-    a.appel-mobile {
-        position: fixed !important;
-
-        left: 10px !important;
-        right: 10px !important;
-
-        width: auto !important;
-        max-width: none !important;
-
-        bottom: 15px !important;
-
-        box-sizing: border-box !important;
-
-        margin: 0 !important;
-    }
-
-}
