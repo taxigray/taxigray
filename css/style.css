@@ -931,6 +931,15 @@ footer a:hover {
         box-shadow .2s ease;
 }
 
+   /* Effet au toucher */
+
+.appel-mobile:active {
+    transform: scale(0.98);
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.25);
+}
+
     body {
         padding-bottom: 80px;
     }
