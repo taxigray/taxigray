@@ -580,110 +580,185 @@ Meximieux, Priay, Pont-d'Ain, Saint-Vulbas, Loyettes et les communes voisines.
 
 <section id="contact" class="reservation">
 
-<div class="container">
+    <div class="container">
 
-<h2>🚕 Réserver votre taxi</h2>
+        <h2>🚕 Réserver votre taxi</h2>
 
-<p>
-Besoin d'un déplacement ? Demandez votre réservation auprès de TAXI GRAY.
-Nous vous répondrons rapidement avec une estimation adaptée à votre trajet.
-</p>
+        <p>
+            Besoin d'un déplacement ? Demandez votre réservation auprès de TAXI GRAY.
+            Nous vous répondrons rapidement avec une estimation adaptée à votre trajet.
+        </p>
 
+        <form id="formulaire-reservation" class="form-reservation">
 
-<form id="formulaire-reservation" class="form-reservation">
+            <!-- TÉLÉPHONE -->
 
+            <div>
+                <label for="telephone">📞 Votre numéro de téléphone *</label>
 
-<div>
-<label for="depart">📍 Départ</label>
-<input type="text" id="depart" name="depart" placeholder="Votre lieu de départ">
-</div>
-
-
-<div>
-<label for="destination">📍 Destination</label>
-<input type="text" id="destination" name="destination" placeholder="Votre destination">
-</div>
-
-
-<div>
-<label for="date">📅 Date du trajet</label>
-<input type="date" id="date" name="date">
-</div>
+                <input
+                    type="tel"
+                    id="telephone"
+                    name="telephone"
+                    placeholder="06 12 88 16 34"
+                    autocomplete="tel"
+                    inputmode="tel"
+                    required
+                >
+            </div>
 
 
-<div>
-<label for="heure">⏰ Heure souhaitée</label>
-<input type="time" id="heure" name="heure">
-</div>
+            <!-- DÉPART -->
+
+            <div>
+                <label for="depart">📍 Départ *</label>
+
+                <input
+                    type="text"
+                    id="depart"
+                    name="depart"
+                    placeholder="Adresse ou commune de départ"
+                    autocomplete="street-address"
+                    required
+                >
+            </div>
 
 
-<div>
-<label for="passagers">👥 Nombre de passagers</label>
+            <!-- DESTINATION -->
 
-<select id="passagers" name="passagers">
-<option value="">Choisir</option>
-<option value="1">1 passager</option>
-<option value="2">2 passagers</option>
-<option value="3">3 passagers</option>
-<option value="4">4 passagers</option>
-<option value="5 ou plus">5 ou plus</option>
-</select>
+            <div>
+                <label for="destination">📍 Destination *</label>
 
-</div>
-
-
-<div>
-<label for="motif">🎯 Motif du trajet</label>
-
-<select id="motif" name="motif">
-
-<option value="">Choisir</option>
-<option value="Transport CPAM">🏥 Transport CPAM</option>
-<option value="Gare">🚉 Gare</option>
-<option value="Aéroport">✈️ Aéroport</option>
-<option value="Déplacement professionnel">💼 Déplacement professionnel</option>
-<option value="Autre">Autre</option>
-
-</select>
-
-</div>
+                <input
+                    type="text"
+                    id="destination"
+                    name="destination"
+                    placeholder="Adresse ou commune de destination"
+                    required
+                >
+            </div>
 
 
-<div>
-<label for="message">💬 Informations supplémentaires</label>
+            <!-- DATE -->
 
-<textarea id="message" name="message" placeholder="Adresse précise, étage, bagages, fauteuil roulant..."></textarea>
+            <div>
+                <label for="date">📅 Date du trajet *</label>
 
-</div>
-
-
-
-<div class="contact-buttons">
-
-
-<button type="button" class="btn whatsapp" onclick="envoyerWhatsApp()">
-
-<img src="images/whatsapp.webp" alt="WhatsApp">
-
-Envoyer ma demande par WhatsApp
-
-</button>
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    required
+                >
+            </div>
 
 
+            <!-- HEURE -->
 
-<button type="button" class="btn email" onclick="envoyerMail()">
+            <div>
+                <label for="heure">⏰ Heure souhaitée *</label>
 
-📧 Envoyer par mail
+                <input
+                    type="time"
+                    id="heure"
+                    name="heure"
+                    required
+                >
+            </div>
 
-</button>
+
+            <!-- PASSAGERS -->
+
+            <div>
+                <label for="passagers">👥 Nombre de passagers *</label>
+
+                <select
+                    id="passagers"
+                    name="passagers"
+                    required
+                >
+                    <option value="">Choisir</option>
+                    <option value="1">1 passager</option>
+                    <option value="2">2 passagers</option>
+                    <option value="3">3 passagers</option>
+                    <option value="4">4 passagers</option>
+                    <option value="5 ou plus">5 ou plus</option>
+                </select>
+            </div>
 
 
-</div>
+            <!-- MOTIF -->
+
+            <div>
+                <label for="motif">🎯 Motif du trajet *</label>
+
+                <select
+                    id="motif"
+                    name="motif"
+                    required
+                >
+                    <option value="">Choisir</option>
+                    <option value="Transport CPAM">🏥 Transport CPAM</option>
+                    <option value="Gare">🚉 Gare</option>
+                    <option value="Aéroport">✈️ Aéroport</option>
+                    <option value="Déplacement professionnel">
+                        💼 Déplacement professionnel
+                    </option>
+                    <option value="Autre">Autre</option>
+                </select>
+            </div>
 
 
-</form>
+            <!-- INFORMATIONS SUPPLÉMENTAIRES -->
 
-</div>
+            <div>
+                <label for="message">
+                    💬 Informations supplémentaires
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Adresse précise, étage, bagages, besoin particulier..."
+                ></textarea>
+            </div>
+
+
+            <!-- BOUTONS -->
+
+            <div class="contact-buttons">
+
+                <button
+                    type="button"
+                    class="btn whatsapp"
+                    onclick="envoyerWhatsApp()"
+                >
+
+                    <img
+                        src="images/whatsapp.webp"
+                        alt="WhatsApp"
+                    >
+
+                    Envoyer ma demande par WhatsApp
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn email"
+                    onclick="envoyerMail()"
+                >
+
+                    📧 Envoyer par mail
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
 
 </section>
 <footer>
