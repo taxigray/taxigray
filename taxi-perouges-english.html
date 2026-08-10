@@ -803,6 +803,72 @@ Serving Pérouges, Meximieux and the surrounding area
 </a>
 
 
+<script>
+
+function envoyerWhatsApp() {
+
+    const telephone = document.getElementById("telephone").value;
+    const depart = document.getElementById("depart").value;
+    const destination = document.getElementById("destination").value;
+    const date = document.getElementById("date").value;
+    const heure = document.getElementById("heure").value;
+    const passagers = document.getElementById("passagers").value;
+    const motif = document.getElementById("motif").value;
+    const message = document.getElementById("message").value;
+
+    const texte =
+        "Taxi booking request\n\n" +
+        "Phone: " + telephone + "\n" +
+        "Pick-up: " + depart + "\n" +
+        "Destination: " + destination + "\n" +
+        "Date: " + date + "\n" +
+        "Time: " + heure + "\n" +
+        "Passengers: " + passagers + "\n" +
+        "Reason: " + motif + "\n" +
+        "Additional information: " + message;
+
+    window.open(
+        "https://wa.me/33612881634?text=" +
+        encodeURIComponent(texte),
+        "_blank"
+    );
+}
+
+
+function envoyerMail() {
+
+    const telephone = document.getElementById("telephone").value;
+    const depart = document.getElementById("depart").value;
+    const destination = document.getElementById("destination").value;
+    const date = document.getElementById("date").value;
+    const heure = document.getElementById("heure").value;
+    const passagers = document.getElementById("passagers").value;
+    const motif = document.getElementById("motif").value;
+    const message = document.getElementById("message").value;
+
+    const sujet =
+        "Taxi booking request - Pérouges";
+
+    const corps =
+        "Phone: " + telephone + "\n" +
+        "Pick-up: " + depart + "\n" +
+        "Destination: " + destination + "\n" +
+        "Date: " + date + "\n" +
+        "Time: " + heure + "\n" +
+        "Passengers: " + passagers + "\n" +
+        "Reason: " + motif + "\n\n" +
+        "Additional information:\n" +
+        message;
+
+    window.location.href =
+        "mailto:?subject=" +
+        encodeURIComponent(sujet) +
+        "&body=" +
+        encodeURIComponent(corps);
+}
+
+</script>
+
 
 </body>
 
