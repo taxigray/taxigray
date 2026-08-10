@@ -1067,3 +1067,25 @@ footer a:hover {
     }
 
 }
+.hero-services {
+    text-align: center;
+}
+
+.hero-services > div {
+    margin-bottom: 6px;
+}
+
+.hero-services .english-service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.hero-services .flag-language {
+    width: 32px;
+    height: 21px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+}
