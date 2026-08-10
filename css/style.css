@@ -993,3 +993,52 @@ footer a:hover {
         animation: none !important;
     }
 }
+/* ================================
+   MENTIONS LÉGALES
+================================ */
+
+.legal-content {
+    max-width: 900px;
+}
+
+.legal-content h2 {
+    margin-top: 45px;
+    margin-bottom: 18px;
+}
+
+.legal-content h2:first-child {
+    margin-top: 0;
+}
+
+.legal-content p {
+    line-height: 1.7;
+}
+
+.legal-card {
+    background: #f7f7f7;
+    border-radius: 12px;
+    padding: 22px 25px;
+    margin: 20px 0 25px;
+    border-left: 4px solid #d4a017;
+}
+
+.legal-card p {
+    margin: 8px 0;
+}
+
+.legal-card a,
+.legal-content a {
+    color: inherit;
+}
+
+@media (max-width: 700px) {
+
+    .legal-card {
+        padding: 18px;
+    }
+
+    .legal-content h2 {
+        margin-top: 35px;
+    }
+
+}
