@@ -1067,3 +1067,10 @@ footer a:hover {
     }
 
 }
+.flag-language {
+    width: 32px;
+    height: 21px;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 7px;
+}
