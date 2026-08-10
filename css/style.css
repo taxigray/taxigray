@@ -1067,9 +1067,3 @@ footer a:hover {
     }
 
 }
-.english-service {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-}
