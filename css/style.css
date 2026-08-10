@@ -1067,10 +1067,16 @@ footer a:hover {
     }
 
 }
+.english-service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
 .flag-language {
     width: 32px;
     height: 21px;
     object-fit: cover;
-    vertical-align: middle;
-    margin-right: 7px;
+    flex-shrink: 0;
 }
