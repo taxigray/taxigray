@@ -1073,10 +1073,3 @@ footer a:hover {
     justify-content: center;
     gap: 7px;
 }
-
-.flag-language {
-    width: 32px;
-    height: 21px;
-    object-fit: cover;
-    flex-shrink: 0;
-}
