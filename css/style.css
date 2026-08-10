@@ -64,8 +64,9 @@ img {
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: 18px;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 nav a:hover {
