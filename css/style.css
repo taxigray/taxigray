@@ -1091,99 +1091,31 @@ footer a:hover {
     flex-shrink: 0;
 }
 /* =========================================
-   BOUTON WHATSAPP MOBILE - PAGES ENGLISH
+   BOUTONS FLOTTANTS MOBILE - PAGES ENGLISH
 ========================================= */
 
+.appel-mobile,
 .whatsapp-mobile {
     display: none;
 }
 
 @media (max-width: 700px) {
 
-    .appel-mobile {
-        display: block !important;
-
-        position: fixed !important;
-
-        left: 0 !important;
-        right: 0 !important;
-        bottom: 0 !important;
-
-        width: 100% !important;
-        height: 60px !important;
-
-        box-sizing: border-box !important;
-
-        background: #FFD400 !important;
-        color: #111 !important;
-
-        text-align: center !important;
-
-        padding: 17px 20px !important;
-
-        font-size: 16px !important;
-        font-weight: bold !important;
-
-        text-decoration: none !important;
-
-        z-index: 9999 !important;
-
-        box-shadow: 0 -3px 15px rgba(0,0,0,.20);
-    }
-
-    .whatsapp-mobile {
-        display: block !important;
-
-        position: fixed !important;
-
-        left: 0 !important;
-        right: 0 !important;
-        bottom: 60px !important;
-
-        width: 100% !important;
-        height: 60px !important;
-
-        box-sizing: border-box !important;
-
-        background: #25D366 !important;
-        color: #fff !important;
-
-        text-align: center !important;
-
-        padding: 17px 20px !important;
-
-        font-size: 16px !important;
-        font-weight: bold !important;
-
-        text-decoration: none !important;
-
-        z-index: 9998 !important;
-    }
-
-    body {
-        padding-bottom: 140px !important;
-    }
-
-}
-
-/* =========================================
-   CORRECTION BOUTON CALL TAXI GRAY
-========================================= */
-
-@media (max-width: 700px) {
+    /* CALL TAXI GRAY */
 
     a.appel-mobile {
+        display: block !important;
+
         position: fixed !important;
 
-        left: auto !important;
         right: 15px !important;
-
         bottom: 15px !important;
 
-        width: auto !important;
-        max-width: max-content !important;
+        left: auto !important;
 
+        width: auto !important;
         height: auto !important;
+        max-width: max-content !important;
         min-height: 0 !important;
 
         padding: 14px 20px !important;
@@ -1193,43 +1125,69 @@ footer a:hover {
 
         border-radius: 50px !important;
 
-        display: block !important;
+        text-align: center !important;
+
+        font-size: 16px !important;
+        font-weight: bold !important;
+
+        text-decoration: none !important;
+
+        white-space: nowrap !important;
 
         box-sizing: border-box !important;
 
         z-index: 9999 !important;
-
-        white-space: nowrap !important;
 
         box-shadow: 0 5px 15px rgba(0,0,0,.25);
     }
 
 
+    /* WHATSAPP */
+
     a.whatsapp-mobile {
+        display: block !important;
+
         position: fixed !important;
 
-        left: auto !important;
         right: 15px !important;
-
         bottom: 75px !important;
 
-        width: auto !important;
-        max-width: max-content !important;
+        left: auto !important;
 
+        width: auto !important;
         height: auto !important;
+        max-width: max-content !important;
         min-height: 0 !important;
 
         padding: 14px 20px !important;
 
+        background: #25D366 !important;
+        color: #fff !important;
+
         border-radius: 50px !important;
 
-        display: block !important;
+        text-align: center !important;
+
+        font-size: 16px !important;
+        font-weight: bold !important;
+
+        text-decoration: none !important;
+
+        white-space: nowrap !important;
 
         box-sizing: border-box !important;
 
         z-index: 9998 !important;
 
-        white-space: nowrap !important;
+        box-shadow: 0 5px 15px rgba(0,0,0,.25);
+    }
+
+
+    /* ESPACE POUR ÉVITER QUE LES BOUTONS
+       CACHENT LE BAS DU CONTENU */
+
+    body {
+        padding-bottom: 20px !important;
     }
 
 }
