@@ -1106,11 +1106,14 @@ footer a:hover {
 
         position: fixed !important;
 
+        left: auto !important;
         right: 15px !important;
         bottom: 15px !important;
 
         width: auto !important;
+        max-width: max-content !important;
         height: auto !important;
+        min-height: 0 !important;
 
         padding: 14px 20px !important;
 
@@ -1127,7 +1130,7 @@ footer a:hover {
 
         z-index: 9999 !important;
 
-        box-shadow: 0 5px 15px rgba(0,0,0,.25);
+        box-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
 
         box-sizing: border-box !important;
     }
@@ -1138,11 +1141,14 @@ footer a:hover {
 
         position: fixed !important;
 
+        left: auto !important;
         right: 15px !important;
         bottom: 75px !important;
 
         width: auto !important;
+        max-width: max-content !important;
         height: auto !important;
+        min-height: 0 !important;
 
         padding: 14px 20px !important;
 
@@ -1159,7 +1165,7 @@ footer a:hover {
 
         z-index: 9998 !important;
 
-        box-shadow: 0 5px 15px rgba(0,0,0,.25);
+        box-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
 
         box-sizing: border-box !important;
     }
