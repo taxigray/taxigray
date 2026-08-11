@@ -1164,3 +1164,43 @@ footer a:hover {
     }
 
 }
+/* =========================================
+BOUTONS FLOTTANTS ENGLISH UNIQUEMENT
+NE TOUCHE PAS AU BOUTON FRANÇAIS
+========================================= */
+
+@media (max-width: 700px) {
+
+    a.appel-mobile-english {
+        display: block !important;
+        position: fixed !important;
+
+        right: 15px !important;
+        bottom: 15px !important;
+        left: auto !important;
+
+        width: auto !important;
+        max-width: max-content !important;
+        height: auto !important;
+
+        padding: 14px 20px !important;
+
+        background: #FFD400 !important;
+        color: #111 !important;
+
+        border-radius: 50px !important;
+
+        text-decoration: none !important;
+        font-weight: bold !important;
+        font-size: 16px !important;
+
+        white-space: nowrap !important;
+
+        box-sizing: border-box !important;
+
+        z-index: 10000 !important;
+
+        box-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
+    }
+
+}
