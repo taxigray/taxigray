@@ -1100,6 +1100,37 @@ footer a:hover {
 
 @media (max-width: 700px) {
 
+    .appel-mobile {
+        display: block !important;
+
+        position: fixed !important;
+
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+
+        width: 100% !important;
+        height: 60px !important;
+
+        box-sizing: border-box !important;
+
+        background: #FFD400 !important;
+        color: #111 !important;
+
+        text-align: center !important;
+
+        padding: 17px 20px !important;
+
+        font-size: 16px !important;
+        font-weight: bold !important;
+
+        text-decoration: none !important;
+
+        z-index: 9999 !important;
+
+        box-shadow: 0 -3px 15px rgba(0,0,0,.20);
+    }
+
     .whatsapp-mobile {
         display: block !important;
 
@@ -1115,7 +1146,7 @@ footer a:hover {
         box-sizing: border-box !important;
 
         background: #25D366 !important;
-        color: #ffffff !important;
+        color: #fff !important;
 
         text-align: center !important;
 
@@ -1129,25 +1160,10 @@ footer a:hover {
         z-index: 9998 !important;
     }
 
-    .appel-mobile {
-        display: block !important;
-
-        position: fixed !important;
-
-        left: 0 !important;
-        right: 0 !important;
-        bottom: 0 !important;
-
-        width: 100% !important;
-        height: 60px !important;
-
-        box-sizing: border-box !important;
-
-        z-index: 9999 !important;
-    }
-
     body {
         padding-bottom: 140px !important;
     }
+
+}
 
 }
