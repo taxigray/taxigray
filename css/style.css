@@ -1091,8 +1091,8 @@ footer a:hover {
     flex-shrink: 0;
 }
 /* =========================================
-   BOUTONS FLOTTANTS MOBILE - PAGES ENGLISH
-   ========================================= */
+   BOUTONS FLOTTANTS - PAGES ENGLISH
+========================================= */
 
 .appel-mobile,
 .whatsapp-mobile {
@@ -1109,12 +1109,8 @@ footer a:hover {
         right: 15px !important;
         bottom: 15px !important;
 
-        left: auto !important;
-
         width: auto !important;
         height: auto !important;
-        max-width: none !important;
-        min-height: 0 !important;
 
         padding: 14px 20px !important;
 
@@ -1123,19 +1119,17 @@ footer a:hover {
 
         border-radius: 50px !important;
 
-        text-align: center !important;
+        text-decoration: none !important;
+        font-weight: bold !important;
+        font-size: 16px !important;
+
         white-space: nowrap !important;
 
-        font-size: 16px !important;
-        font-weight: bold !important;
+        z-index: 9999 !important;
 
-        text-decoration: none !important;
+        box-shadow: 0 5px 15px rgba(0,0,0,.25);
 
         box-sizing: border-box !important;
-
-        z-index: 10001 !important;
-
-        box-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
     }
 
 
@@ -1147,12 +1141,8 @@ footer a:hover {
         right: 15px !important;
         bottom: 75px !important;
 
-        left: auto !important;
-
         width: auto !important;
         height: auto !important;
-        max-width: none !important;
-        min-height: 0 !important;
 
         padding: 14px 20px !important;
 
@@ -1161,19 +1151,17 @@ footer a:hover {
 
         border-radius: 50px !important;
 
-        text-align: center !important;
+        text-decoration: none !important;
+        font-weight: bold !important;
+        font-size: 16px !important;
+
         white-space: nowrap !important;
 
-        font-size: 16px !important;
-        font-weight: bold !important;
+        z-index: 9998 !important;
 
-        text-decoration: none !important;
+        box-shadow: 0 5px 15px rgba(0,0,0,.25);
 
         box-sizing: border-box !important;
-
-        z-index: 10000 !important;
-
-        box-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
     }
 
 }
