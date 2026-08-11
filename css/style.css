@@ -1091,19 +1091,17 @@ footer a:hover {
     flex-shrink: 0;
 }
 /* =========================================
-   BOUTONS FLOTTANTS MOBILE - PAGES ENGLISH
+   FLOATING BUTTONS - ENGLISH PAGES
 ========================================= */
 
-.appel-mobile,
-.whatsapp-mobile {
+.floating-call,
+.floating-whatsapp {
     display: none;
 }
 
 @media (max-width: 700px) {
 
-    /* CALL TAXI GRAY */
-
-    a.appel-mobile {
+    .floating-call {
         display: block !important;
 
         position: fixed !important;
@@ -1111,83 +1109,67 @@ footer a:hover {
         right: 15px !important;
         bottom: 15px !important;
 
-        left: auto !important;
-
-        width: auto !important;
+        width: max-content !important;
         height: auto !important;
-        max-width: max-content !important;
-        min-height: 0 !important;
 
-        padding: 14px 20px !important;
+        padding: 12px 18px !important;
+
+        margin: 0 !important;
 
         background: #FFD400 !important;
         color: #111 !important;
 
         border-radius: 50px !important;
 
-        text-align: center !important;
-
-        font-size: 16px !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 15px !important;
         font-weight: bold !important;
+        line-height: 1.2 !important;
 
         text-decoration: none !important;
+        white-space: nowrap !important;
 
+        box-sizing: border-box !important;
+
+        z-index: 10000 !important;
+
+        box-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
+    }
+
+
+    .floating-whatsapp {
+        display: block !important;
+
+        position: fixed !important;
+
+        right: 15px !important;
+        bottom: 68px !important;
+
+        width: max-content !important;
+        height: auto !important;
+
+        padding: 12px 18px !important;
+
+        margin: 0 !important;
+
+        background: #25D366 !important;
+        color: white !important;
+
+        border-radius: 50px !important;
+
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 15px !important;
+        font-weight: bold !important;
+        line-height: 1.2 !important;
+
+        text-decoration: none !important;
         white-space: nowrap !important;
 
         box-sizing: border-box !important;
 
         z-index: 9999 !important;
 
-        box-shadow: 0 5px 15px rgba(0,0,0,.25);
-    }
-
-
-    /* WHATSAPP */
-
-    a.whatsapp-mobile {
-        display: block !important;
-
-        position: fixed !important;
-
-        right: 15px !important;
-        bottom: 75px !important;
-
-        left: auto !important;
-
-        width: auto !important;
-        height: auto !important;
-        max-width: max-content !important;
-        min-height: 0 !important;
-
-        padding: 14px 20px !important;
-
-        background: #25D366 !important;
-        color: #fff !important;
-
-        border-radius: 50px !important;
-
-        text-align: center !important;
-
-        font-size: 16px !important;
-        font-weight: bold !important;
-
-        text-decoration: none !important;
-
-        white-space: nowrap !important;
-
-        box-sizing: border-box !important;
-
-        z-index: 9998 !important;
-
-        box-shadow: 0 5px 15px rgba(0,0,0,.25);
-    }
-
-
-    /* ESPACE POUR ÉVITER QUE LES BOUTONS
-       CACHENT LE BAS DU CONTENU */
-
-    body {
-        padding-bottom: 20px !important;
+        box-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
     }
 
 }
