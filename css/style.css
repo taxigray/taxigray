@@ -1101,9 +1101,8 @@ footer a:hover {
 
 @media (max-width: 700px) {
 
-    .appel-mobile {
+    .appel-mobile-english {
         display: block !important;
-
         position: fixed !important;
 
         left: auto !important;
@@ -1112,8 +1111,6 @@ footer a:hover {
 
         width: auto !important;
         max-width: max-content !important;
-        height: auto !important;
-        min-height: 0 !important;
 
         padding: 14px 20px !important;
 
@@ -1125,13 +1122,9 @@ footer a:hover {
         text-decoration: none !important;
         font-weight: bold !important;
         font-size: 16px !important;
-
         white-space: nowrap !important;
 
         z-index: 9999 !important;
-
-        box-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
-
         box-sizing: border-box !important;
     }
 
