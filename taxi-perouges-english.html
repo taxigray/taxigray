@@ -876,7 +876,22 @@ function envoyerMail() {
 }
 
 </script>
+<script>
 
+const bouton = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+if (bouton && menu) {
+
+    bouton.addEventListener("click", function(){
+
+        menu.classList.toggle("ouvert");
+
+    });
+
+}
+
+</script>
 
 </body>
 
