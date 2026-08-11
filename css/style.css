@@ -1091,69 +1091,37 @@ footer a:hover {
     flex-shrink: 0;
 }
 /* =========================================
-   BOUTONS FLOTTANTS - PAGES ENGLISH
+BOUTONS FLOTTANTS - PAGES ENGLISH UNIQUEMENT
 ========================================= */
 
-.appel-mobile,
+/* Cachés sur PC */
+.appel-mobile-english,
 .whatsapp-mobile {
     display: none;
 }
 
+
+/* MOBILE */
 @media (max-width: 700px) {
 
-    .whatsapp-mobile {
-        display: block !important;
-
-        position: fixed !important;
-
-        left: auto !important;
-        right: 15px !important;
-        bottom: 75px !important;
-
-        width: auto !important;
-        max-width: max-content !important;
-        height: auto !important;
-        min-height: 0 !important;
-
-        padding: 14px 20px !important;
-
-        background: #25D366 !important;
-        color: white !important;
-
-        border-radius: 50px !important;
-
-        text-decoration: none !important;
-        font-weight: bold !important;
-        font-size: 16px !important;
-
-        white-space: nowrap !important;
-
-        z-index: 9998 !important;
-
-        box-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
-
-        box-sizing: border-box !important;
-    }
-
-}
-/* =========================================
-BOUTONS FLOTTANTS ENGLISH UNIQUEMENT
-NE TOUCHE PAS AU BOUTON FRANÇAIS
-========================================= */
-
-@media (max-width: 700px) {
+    /* ==============================
+       CALL TAXI GRAY
+       ============================== */
 
     a.appel-mobile-english {
         display: block !important;
+
         position: fixed !important;
 
+        left: auto !important;
         right: 15px !important;
         bottom: 15px !important;
-        left: auto !important;
 
         width: auto !important;
         max-width: max-content !important;
+
         height: auto !important;
+        min-height: 0 !important;
 
         padding: 14px 20px !important;
 
@@ -1171,6 +1139,46 @@ NE TOUCHE PAS AU BOUTON FRANÇAIS
         box-sizing: border-box !important;
 
         z-index: 10000 !important;
+
+        box-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
+    }
+
+
+    /* ==============================
+       WHATSAPP
+       ============================== */
+
+    a.whatsapp-mobile {
+        display: block !important;
+
+        position: fixed !important;
+
+        left: auto !important;
+        right: 15px !important;
+        bottom: 75px !important;
+
+        width: auto !important;
+        max-width: max-content !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+
+        padding: 14px 20px !important;
+
+        background: #25D366 !important;
+        color: white !important;
+
+        border-radius: 50px !important;
+
+        text-decoration: none !important;
+        font-weight: bold !important;
+        font-size: 16px !important;
+
+        white-space: nowrap !important;
+
+        box-sizing: border-box !important;
+
+        z-index: 9999 !important;
 
         box-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
     }
