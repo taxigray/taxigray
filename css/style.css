@@ -1090,12 +1090,12 @@ footer a:hover {
     display: block;
     flex-shrink: 0;
 }
-.whatsapp-mobile {
-    display: none;
-}
+/* =========================================
+   BOUTON WHATSAPP MOBILE - PAGES ENGLISH
+========================================= */
 
 .whatsapp-mobile {
-    display: none !important;
+    display: none;
 }
 
 @media (max-width: 700px) {
@@ -1110,7 +1110,7 @@ footer a:hover {
         bottom: 60px !important;
 
         width: 100% !important;
-        height: 55px !important;
+        height: 60px !important;
 
         box-sizing: border-box !important;
 
@@ -1119,9 +1119,8 @@ footer a:hover {
 
         text-align: center !important;
 
-        padding: 16px 20px !important;
+        padding: 17px 20px !important;
 
-        font-family: Arial, Helvetica, sans-serif !important;
         font-size: 16px !important;
         font-weight: bold !important;
 
@@ -1131,6 +1130,8 @@ footer a:hover {
     }
 
     .appel-mobile {
+        display: block !important;
+
         position: fixed !important;
 
         left: 0 !important;
@@ -1143,6 +1144,10 @@ footer a:hover {
         box-sizing: border-box !important;
 
         z-index: 9999 !important;
+    }
+
+    body {
+        padding-bottom: 140px !important;
     }
 
 }
