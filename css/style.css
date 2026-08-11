@@ -1166,4 +1166,70 @@ footer a:hover {
 
 }
 
+/* =========================================
+   CORRECTION BOUTON CALL TAXI GRAY
+========================================= */
+
+@media (max-width: 700px) {
+
+    a.appel-mobile {
+        position: fixed !important;
+
+        left: auto !important;
+        right: 15px !important;
+
+        bottom: 15px !important;
+
+        width: auto !important;
+        max-width: max-content !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+
+        padding: 14px 20px !important;
+
+        background: #FFD400 !important;
+        color: #111 !important;
+
+        border-radius: 50px !important;
+
+        display: block !important;
+
+        box-sizing: border-box !important;
+
+        z-index: 9999 !important;
+
+        white-space: nowrap !important;
+
+        box-shadow: 0 5px 15px rgba(0,0,0,.25);
+    }
+
+
+    a.whatsapp-mobile {
+        position: fixed !important;
+
+        left: auto !important;
+        right: 15px !important;
+
+        bottom: 75px !important;
+
+        width: auto !important;
+        max-width: max-content !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+
+        padding: 14px 20px !important;
+
+        border-radius: 50px !important;
+
+        display: block !important;
+
+        box-sizing: border-box !important;
+
+        z-index: 9998 !important;
+
+        white-space: nowrap !important;
+    }
+
 }
