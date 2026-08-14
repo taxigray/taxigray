@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://taxigray.github.io/taxigray/sitemap.xml
+Sitemap: https://taxigray.fr/
