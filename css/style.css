@@ -1269,53 +1269,15 @@ h2::after {
     }
 
 }
-/* =========================================================
-   FIX FORMULAIRE MOBILE
-========================================================= */
-
+/* Correction uniquement des champs DATE et HEURE sur mobile */
 @media (max-width: 700px) {
 
-    .reservation .container {
-        padding-left: 0;
-        padding-right: 0;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .reservation .form-reservation {
-        width: 100%;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
-    }
-
-    .form-reservation > div {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-    }
-
-    .form-reservation input,
-    .form-reservation select,
-    .form-reservation textarea {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-    }
-
-    .form-reservation input[type="date"],
-    .form-reservation input[type="time"] {
-        display: block;
+    #date,
+    #heure {
         width: 100% !important;
         max-width: 100% !important;
-        min-width: 0 !important;
-        height: 48px;
-        padding: 10px !important;
-        margin: 0 !important;
         box-sizing: border-box !important;
+        padding: 10px !important;
         font-size: 16px !important;
     }
 
