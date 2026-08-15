@@ -1200,3 +1200,7 @@ h2::after {
     border-radius: 3px;
     margin: 14px auto 0;
 }
+/* Cartes services : petit accent jaune au survol */
+.card:hover {
+    border-color: #FFD400;
+}
