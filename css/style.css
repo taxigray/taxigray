@@ -1269,20 +1269,3 @@ h2::after {
     }
 
 }
-/* Finitions du menu mobile */
-@media (max-width: 700px) {
-
-    .menu {
-        border-top: 3px solid #FFD400;
-    }
-
-    .menu a {
-        padding: 8px 20px;
-    }
-
-    .menu-toggle {
-        padding: 5px 10px;
-        border-radius: 8px;
-    }
-
-}
