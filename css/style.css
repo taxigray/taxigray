@@ -1186,3 +1186,17 @@ BOUTONS FLOTTANTS - PAGES ENGLISH UNIQUEMENT
     }
 
 }
+/* =========================================
+   AJOUTS VISUELS - DESIGN
+   ========================================= */
+
+/* Soulignement jaune sous les titres */
+h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    background: #FFD400;
+    border-radius: 3px;
+    margin: 14px auto 0;
+}
