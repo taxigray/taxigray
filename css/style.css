@@ -587,16 +587,12 @@ RÉSERVATION
 }
 
     .form-reservation input[type="date"],
-    .form-reservation input[type="time"] {
-        width: calc(100% - 2px) !important;
-        max-width: calc(100% - 2px) !important;
-        min-width: 0 !important;
-        box-sizing: border-box !important;
-        padding: 12px !important;
-        margin-left: 0 !important;
-        margin-right: 2px !important;
-    }
-
+.form-reservation input[type="time"] {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
 .form-reservation textarea {
     min-height: 120px;
     resize: vertical;
