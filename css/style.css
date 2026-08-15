@@ -1230,3 +1230,7 @@ h2::after {
         box-shadow: 0 8px 22px rgba(255,212,0,.30);
     }
 }
+/* Ligne jaune sous le HERO */
+.hero {
+    border-bottom: 4px solid #FFD400;
+}
