@@ -1246,3 +1246,26 @@ h2::after {
 .photos img {
     border: 3px solid white;
 }
+/* =========================================
+   MENU MOBILE - FINITIONS VISUELLES
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    /* Ligne jaune entre le header et le menu */
+    .menu {
+        border-top: 3px solid #FFD400;
+    }
+
+    /* Zone de clic plus confortable */
+    .menu a {
+        padding: 8px 20px;
+    }
+
+    /* Bouton ☰ légèrement mieux identifié */
+    .menu-toggle {
+        padding: 5px 10px;
+        border-radius: 8px;
+    }
+
+}
