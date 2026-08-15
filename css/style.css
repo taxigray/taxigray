@@ -1272,3 +1272,21 @@ h2::after {
     }
 
 }
+@media (max-width: 700px) {
+
+    .date-wrapper {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .date-wrapper input[type="date"],
+    .date-wrapper input[type="time"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin: 0 !important;
+    }
+
+}
