@@ -1224,3 +1224,9 @@ h2::after {
     color: #FFD400;
     text-shadow: 0 2px 4px rgba(0,0,0,.12);
 }
+/* Petit effet premium sur le bouton principal du HERO */
+@media (hover: hover) and (pointer: fine) {
+    .hero .btn:first-child:hover {
+        box-shadow: 0 8px 22px rgba(255,212,0,.30);
+    }
+}
