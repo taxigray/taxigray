@@ -1219,3 +1219,8 @@ h2::after {
     height: 4px;
     background: #FFD400;
 }
+/* Étoiles des avis */
+.etoiles {
+    color: #FFD400;
+    text-shadow: 0 2px 4px rgba(0,0,0,.12);
+}
