@@ -592,6 +592,8 @@ RÉSERVATION
     max-width: 100%;
     min-width: 0;
     box-sizing: border-box;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .form-reservation textarea {
     min-height: 120px;
