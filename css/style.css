@@ -1242,3 +1242,7 @@ h2::after {
 .avis-box {
     border-top: 4px solid #FFD400;
 }
+/* Cadre léger autour des photos */
+.photos img {
+    border: 3px solid white;
+}
