@@ -588,8 +588,8 @@ RÉSERVATION
 
 .form-reservation input[type="date"],
 .form-reservation input[type="time"] {
-    width: calc(100% - 4px);
-    max-width: calc(100% - 4px);
+    width: 100%;
+    max-width: 100%;
     min-width: 0;
     box-sizing: border-box;
 }
