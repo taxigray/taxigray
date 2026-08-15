@@ -586,10 +586,10 @@ RÉSERVATION
         box-shadow .2s ease;
 }
 
-    .form-reservation input[type="date"],
+.form-reservation input[type="date"],
 .form-reservation input[type="time"] {
-    width: 100%;
-    max-width: 100%;
+    width: calc(100% - 4px);
+    max-width: calc(100% - 4px);
     min-width: 0;
     box-sizing: border-box;
 }
