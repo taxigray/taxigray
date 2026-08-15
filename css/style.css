@@ -1270,23 +1270,23 @@ h2::after {
 
 }
 /* =========================================================
-   CORRECTION FORMULAIRE MOBILE
+   FIX FORMULAIRE MOBILE
 ========================================================= */
 
 @media (max-width: 700px) {
 
     .reservation .container {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
         padding-left: 0;
         padding-right: 0;
+        width: 100%;
+        max-width: 100%;
     }
 
-    .form-reservation {
+    .reservation .form-reservation {
         width: 100%;
         max-width: 600px;
-        min-width: 0;
+        margin-left: auto;
+        margin-right: auto;
         box-sizing: border-box;
     }
 
@@ -1308,10 +1308,15 @@ h2::after {
 
     .form-reservation input[type="date"],
     .form-reservation input[type="time"] {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
+        display: block;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        height: 48px;
+        padding: 10px !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        font-size: 16px !important;
     }
 
 }
