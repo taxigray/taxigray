@@ -1204,3 +1204,18 @@ h2::after {
 .card:hover {
     border-color: #FFD400;
 }
+/* Cartes zones : bande jaune supérieure */
+.zone-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.zone-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #FFD400;
+}
