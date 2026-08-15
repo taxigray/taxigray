@@ -586,13 +586,16 @@ RÉSERVATION
         box-shadow .2s ease;
 }
 
-.form-reservation input[type="date"],
-.form-reservation input[type="time"] {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-}
+    .form-reservation input[type="date"],
+    .form-reservation input[type="time"] {
+        width: calc(100% - 2px) !important;
+        max-width: calc(100% - 2px) !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        padding: 12px !important;
+        margin-left: 0 !important;
+        margin-right: 2px !important;
+    }
 
 .form-reservation textarea {
     min-height: 120px;
@@ -1266,27 +1269,6 @@ h2::after {
     .menu-toggle {
         padding: 5px 10px;
         border-radius: 8px;
-    }
-
-}
-/* =========================================================
-   IPHONE - DATE ET HEURE
-========================================================= */
-
-@media (max-width: 700px) {
-
-    #date,
-    #heure {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-        display: block;
-    }
-
-    /* Évite que le contrôle natif iOS impose une largeur */
-    #date::-webkit-date-and-time-value,
-    #heure::-webkit-date-and-time-value {
-        text-align: left;
     }
 
 }
