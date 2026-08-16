@@ -1270,3 +1270,9 @@ h2::after {
     }
 
 }
+/* Retour visuel au toucher */
+.btn:active,
+.menu a:active,
+.zone-card a:active {
+    opacity: .85;
+}
