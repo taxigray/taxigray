@@ -1,6 +1,6 @@
 /* =========================================================
-   BASE
-========================================================= */
+   1. BASE
+   ========================================================= */
 
 html {
     scroll-behavior: smooth;
@@ -21,26 +21,26 @@ body {
 }
 
 img {
+    display: block;
     max-width: 100%;
     height: auto;
-    display: block;
 }
 
 .container {
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
 
 /* =========================================================
-   HEADER / MENU
-   ⚠️ NE PAS MODIFIER
-========================================================= */
+   2. HEADER / MENU
+   ⚠️ COMPORTEMENT CONSERVÉ
+   ========================================================= */
 
 .header {
     background: #000;
-    color: white;
+    color: #fff;
     padding: 10px 0;
 }
 
@@ -52,8 +52,8 @@ img {
 }
 
 .logo {
-    height: 120px !important;
     width: auto !important;
+    height: 120px !important;
 }
 
 .header h1 {
@@ -62,7 +62,7 @@ img {
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     margin-left: 18px;
     font-weight: bold;
@@ -73,6 +73,10 @@ nav a:hover {
     color: #FFD400;
 }
 
+.menu {
+    display: flex;
+}
+
 .menu-toggle {
     display: none;
     font-size: 32px;
@@ -80,25 +84,27 @@ nav a:hover {
     cursor: pointer;
 }
 
-.menu {
-    display: flex;
-}
-
 
 /* =========================================================
-   HERO
-========================================================= */
+   3. HERO
+   ========================================================= */
 
 .hero {
     position: relative;
     min-height: 600px;
 
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+    text-align: center;
+
     background:
         linear-gradient(
             90deg,
-            rgba(0,0,0,.65),
-            rgba(0,0,0,.35),
-            rgba(0,0,0,.55)
+            rgba(0, 0, 0, .65),
+            rgba(0, 0, 0, .35),
+            rgba(0, 0, 0, .55)
         ),
         url("../images/taxi-1.webp");
 
@@ -106,11 +112,8 @@ nav a:hover {
     background-position: center 75%;
     background-repeat: no-repeat;
 
-    display: flex;
-    align-items: center;
-
-    color: white;
-    text-align: center;
+    border-bottom: 4px solid #FFD400;
+    box-shadow: inset 0 -40px 60px rgba(0, 0, 0, .15);
 }
 
 .hero .container {
@@ -126,952 +129,25 @@ nav a:hover {
     font-size: 45px;
     line-height: 1.15;
 
-    color: white;
+    color: #fff;
 
-    text-shadow: 0 2px 10px rgba(0,0,0,.35);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, .35);
 }
 
 .hero p {
     max-width: 750px;
-    margin: auto;
+    margin: 0 auto;
 
     font-size: 20px;
 
-    text-shadow: 0 1px 6px rgba(0,0,0,.35);
+    text-shadow: 0 1px 6px rgba(0, 0, 0, .35);
 }
 
 .hero-services {
     margin-top: 25px;
+
     font-size: 18px;
     line-height: 2;
-}
-
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-
-/* =========================================================
-   BOUTONS
-========================================================= */
-
-.btn {
-    display: inline-block;
-
-    margin-top: 30px;
-
-    background: #FFD400;
-    color: #111;
-
-    padding: 15px 35px;
-
-    border: 2px solid transparent;
-    border-radius: 30px;
-
-    text-decoration: none;
-    font-weight: bold;
-
-    box-shadow: 0 5px 14px rgba(0,0,0,.10);
-
-    transition:
-        transform .3s ease,
-        box-shadow .3s ease,
-        background .3s ease;
-}
-
-.btn:hover {
-    transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 8px 18px rgba(0,0,0,.16);
-}
-
-.btn.secondaire {
-    display: inline-block !important;
-    background: white !important;
-    color: #111 !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-}
-
-.email {
-    background: #333;
-    color: white;
-}
-
-.email:hover {
-    background: #555;
-}
-
-
-/* =========================================================
-   ACCESSIBILITÉ
-========================================================= */
-
-.btn:focus-visible,
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible {
-    outline: 3px solid #FFD400;
-    outline-offset: 3px;
-}
-
-
-/* =========================================================
-   SECTIONS
-========================================================= */
-
-section {
-    padding: 80px 20px;
-}
-
-section:nth-of-type(even) {
-    background: #fafafa;
-}
-
-h2 {
-    text-align: center;
-
-    font-size: 34px;
-    line-height: 1.2;
-
-    letter-spacing: -.3px;
-
-    margin-bottom: 40px;
-}
-
-
-/* =========================================================
-   SERVICES
-========================================================= */
-
-.cards {
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(230px, 1fr));
-
-    gap: 25px;
-
-    align-items: stretch;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-
-    background: white;
-
-    padding: 35px 30px;
-
-    border: 1px solid #e8e8e8;
-    border-radius: 15px;
-
-    text-align: center;
-
-    box-shadow: 0 4px 18px rgba(0,0,0,.06);
-
-    transition:
-        transform .3s ease,
-        box-shadow .3s ease;
-}
-
-.card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(0,0,0,.12);
-}
-
-.icone {
-    font-size: 45px;
-    line-height: 1;
-    margin-bottom: 20px;
-}
-
-.card h3 {
-    margin-bottom: 18px;
-    line-height: 1.3;
-}
-
-.card p {
-    margin-bottom: 25px;
-
-    color: #444;
-
-    line-height: 1.7;
-}
-
-.card .btn {
-    margin-top: auto;
-}
-
-
-/* =========================================================
-   ZONE D'INTERVENTION
-========================================================= */
-
-.zone-intervention {
-    background: #f4f4f4;
-}
-
-.zone-texte {
-    max-width: 800px;
-
-    margin: 0 auto 40px;
-
-    text-align: center;
-
-    font-size: 20px;
-}
-
-.zones {
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(240px, 1fr));
-
-    gap: 20px;
-
-    margin-bottom: 40px;
-}
-
-.zone-card {
-    background: white;
-
-    padding: 25px;
-
-    border: 1px solid #eeeeee;
-    border-radius: 15px;
-
-    text-align: center;
-    font-weight: bold;
-
-    box-shadow: 0 5px 18px rgba(0,0,0,.06);
-
-    transition:
-        transform .3s ease,
-        box-shadow .3s ease;
-}
-
-.zone-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 24px rgba(0,0,0,.11);
-}
-
-.zone-card a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.zone-card a:hover {
-    text-decoration: underline;
-}
-
-#zone ul {
-    max-width: 500px;
-
-    margin: auto;
-
-    font-size: 20px;
-}
-
-#zone a {
-    color: #111;
-
-    font-weight: bold;
-
-    text-decoration: none;
-}
-
-#zone a:hover {
-    color: #FFD400;
-}
-
-
-/* =========================================================
-   BOUTONS CENTRÉS
-========================================================= */
-
-.zone-intervention .btn,
-#contact .btn {
-    display: block;
-
-    width: fit-content;
-
-    margin: 30px auto 0;
-}
-
-.btn-centre {
-    text-align: center;
-    margin-top: 20px;
-}
-
-
-/* =========================================================
-   GALERIE
-========================================================= */
-
-.photos {
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(250px, 1fr));
-
-    gap: 20px;
-}
-
-.photos img {
-    width: 100%;
-    height: 280px;
-
-    object-fit: cover;
-
-    border-radius: 15px;
-
-    box-shadow: 0 6px 20px rgba(0,0,0,.08);
-
-    transition: transform .3s ease;
-}
-
-.photos img:hover {
-    transform: scale(1.025);
-}
-
-
-/* =========================================================
-   GOOGLE MAP
-========================================================= */
-
-.map {
-    height: 350px;
-
-    border-radius: 15px;
-
-    overflow: hidden;
-}
-
-.map iframe {
-    width: 100%;
-    height: 100%;
-
-    border: 0;
-}
-
-
-/* =========================================================
-   AVIS
-========================================================= */
-
-.avis {
-    background: white;
-}
-
-.avis-box {
-    max-width: 700px;
-
-    margin: auto;
-
-    padding: 40px;
-
-    background: white;
-
-    border: 1px solid #eeeeee;
-    border-radius: 15px;
-
-    text-align: center;
-
-    box-shadow: 0 6px 22px rgba(0,0,0,.07);
-
-    transition:
-        transform .3s ease,
-        box-shadow .3s ease;
-}
-
-.avis-box:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(0,0,0,.12);
-}
-
-.etoiles {
-    font-size: 35px;
-    margin-bottom: 20px;
-}
-
-
-/* =========================================================
-   CONTACT
-========================================================= */
-
-#contact {
-    text-align: center;
-    scroll-margin-top: 120px;
-}
-
-.contact-buttons {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 20px;
-
-    flex-wrap: wrap;
-}
-
-
-/* =========================================================
-RÉSERVATION
-========================================================= */
-
-.reservation {
-    text-align: center;
-    padding: 60px 0;
-    scroll-margin-top: 20px;
-}
-
-.form-reservation {
-    max-width: 600px;
-
-    margin: 30px auto 0;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 20px;
-
-    padding: 32px;
-
-    background: white;
-
-    border: 1px solid #eeeeee;
-
-    border-radius: 18px;
-
-    box-shadow: 0 8px 28px rgba(0,0,0,.08);
-}
-
-.form-reservation label {
-    display: block;
-
-    margin-bottom: 8px;
-
-    font-weight: bold;
-
-    text-align: left;
-}
-
-.form-reservation input,
-.form-reservation select,
-.form-reservation textarea {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-
-    padding: 12px;
-
-    border: 1px solid #ccc;
-    border-radius: 8px;
-
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 1.4;
-
-    background: white;
-
-    box-sizing: border-box;
-
-    transition:
-        border-color .2s ease,
-        box-shadow .2s ease;
-}
-
-.form-reservation input[type="date"],
-.form-reservation input[type="time"] {
-    width: calc(100% - 18px);
-    max-width: calc(100% - 18px);
-    min-width: 0;
-    box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-.form-reservation textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
-.form-reservation input:focus,
-.form-reservation select:focus,
-.form-reservation textarea:focus {
-    border-color: #FFD400;
-
-    box-shadow:
-        0 0 0 3px rgba(255,212,0,.18);
-
-    outline: none;
-}
-
-.form-reservation .btn {
-    margin: 10px auto 0;
-    cursor: pointer;
-}
-
-/* =========================================================
-   WHATSAPP
-========================================================= */
-
-button.btn.whatsapp {
-    display: block;
-
-    width: fit-content;
-
-    margin: 10px auto 0;
-
-    background: #075E54 !important;
-    color: #ffffff !important;
-
-    border: none;
-}
-
-button.btn.whatsapp:hover {
-    background: #054C45 !important;
-}
-
-button.btn.whatsapp img {
-    width: 22px;
-    height: 22px;
-
-    display: inline-block;
-
-    vertical-align: middle;
-
-    margin-right: 8px;
-}
-
-
-/* =========================================================
-   TÉLÉPHONE FLOTTANT
-========================================================= */
-
-.phone-mobile {
-    position: fixed;
-
-    bottom: 20px;
-    right: 20px;
-
-    background: #FFD400;
-    color: #111;
-
-    padding: 15px 20px;
-
-    border-radius: 50px;
-
-    text-decoration: none;
-    font-weight: bold;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,.3);
-
-    z-index: 1000;
-
-    transition:
-        transform .2s ease,
-        box-shadow .2s ease;
-}
-
-.phone-mobile:hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 8px 18px rgba(0,0,0,.35);
-}
-
-
-/* =========================================================
-   BOUTON APPEL MOBILE
-========================================================= */
-
-.appel-mobile {
-    display: none;
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-    background: #111;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 25px 15px;
-
-    border-top: 1px solid #222;
-}
-
-footer .container {
-    padding: 0;
-}
-
-footer p {
-    margin: 6px 0;
-
-    line-height: 1.4;
-}
-
-footer a {
-    color: #FFD500;
-
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-.footer-links {
-    display: flex;
-
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    gap: 10px;
-
-    margin: 12px 0;
-}
-
-.footer-links a {
-    color: #FFD500;
-
-    font-weight: bold;
-}
-
-
-/* =========================================================
-   MOBILE
-   ⚠️ MENU CONSERVÉ
-========================================================= */
-
-@media(max-width:700px) {
-
-    /* -----------------------------------------------------
-       MENU — CONSERVÉ
-    ----------------------------------------------------- */
-
-    .header .container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .menu {
-        display: none;
-
-        position: absolute;
-
-        top: 80px;
-
-        left: 0;
-
-        width: 100%;
-
-        background: #000;
-
-        flex-direction: column;
-
-        text-align: center;
-
-        padding: 20px;
-
-        z-index: 1000;
-    }
-
-    .menu a {
-        margin: 15px 0;
-    }
-
-    .menu.ouvert {
-        display: flex;
-    }
-
-    .menu.ouvert {
-        display: flex !important;
-    }
-
-
-    /* -----------------------------------------------------
-       LOGO — COMPORTEMENT CONSERVÉ
-    ----------------------------------------------------- */
-
-    .logo {
-        height: 60px !important;
-    }
-
-
-    /* -----------------------------------------------------
-       HERO
-    ----------------------------------------------------- */
-
-    .hero {
-        min-height: 500px;
-
-        padding: 60px 20px;
-
-        background-position: center center;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-
-        line-height: 1.2;
-
-        margin-bottom: 15px;
-    }
-
-    .hero p {
-        font-size: 17px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 15px;
-    }
-
-    .hero .btn {
-        width: 100%;
-
-        max-width: 320px;
-
-        text-align: center;
-    }
-
-
-    /* -----------------------------------------------------
-       SECTIONS
-    ----------------------------------------------------- */
-
-    section {
-        padding: 60px 18px;
-    }
-
-    h2 {
-        font-size: 28px;
-
-        margin-bottom: 30px;
-    }
-
-
-    /* -----------------------------------------------------
-       CARTES
-    ----------------------------------------------------- */
-
-    .card {
-        padding: 30px 22px;
-    }
-
-    .zone-card {
-        padding: 20px;
-    }
-
-
-    /* -----------------------------------------------------
-       GALERIE
-    ----------------------------------------------------- */
-
-    .photos img {
-        height: 240px;
-    }
-
-
-    /* -----------------------------------------------------
-       FORMULAIRE
-    ----------------------------------------------------- */
-
-    .form-reservation {
-        padding: 24px 18px;
-    }
-
-
-    /* -----------------------------------------------------
-       APPEL MOBILE
-    ----------------------------------------------------- */
-
-.appel-mobile {
-    display: block !important;
-
-    position: fixed !important;
-
-    bottom: 15px !important;
-    left: 0 !important;
-    right: 0 !important;
-
-    width: 100% !important;
-    max-width: none !important;
-
-    box-sizing: border-box !important;
-
-    background: #FFD400 !important;
-    color: #111 !important;
-
-    text-align: center;
-
-    padding: 14px 20px;
-
-    border-radius: 0;
-
-    font-weight: bold;
-    font-size: 16px;
-
-    text-decoration: none;
-
-    z-index: 9999;
-
-    box-shadow: 0 -3px 15px rgba(0,0,0,.20);
-}
-   /* Effet au toucher */
-
-.appel-mobile:active {
-    transform: scale(0.98);
-
-    box-shadow:
-        0 3px 10px rgba(0,0,0,.25);
-}
-
-    body {
-        padding-bottom: 80px;
-    }
-
-
-    /* -----------------------------------------------------
-       FOOTER
-    ----------------------------------------------------- */
-
-    footer {
-        padding: 18px 10px 75px;
-
-        font-size: 13px;
-    }
-
-    footer p {
-        margin: 4px 0;
-
-        line-height: 1.4;
-    }
-
-    .footer-links {
-        line-height: 1.7;
-
-        gap: 6px;
-
-        margin: 8px 0;
-    }
-
-    .footer-links a {
-        font-size: 14px;
-    }
-}
-
-
-/* =========================================================
-   RÉDUCTION DES ANIMATIONS
-========================================================= */
-
-@media(prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        scroll-behavior: auto !important;
-
-        transition: none !important;
-
-        animation: none !important;
-    }
-}
-/* ================================
-   MENTIONS LÉGALES
-================================ */
-
-.legal-content {
-    max-width: 900px;
-    padding-top: 55px;
-    padding-bottom: 70px;
-}
-
-.legal-content h2 {
-    margin-top: 60px;
-    margin-bottom: 25px;
-}
-
-.legal-content h2:first-child {
-    margin-top: 0;
-}
-
-.legal-content p {
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.legal-card {
-    background: #f7f7f7;
-    border-radius: 12px;
-    padding: 25px 30px;
-    margin: 25px 0 40px;
-    border-left: 4px solid #d4a017;
-}
-
-.legal-card p {
-    margin: 10px 0;
-}
-
-.legal-card a,
-.legal-content a {
-    color: inherit;
-}
-
-
-/* ESPACE ENTRE LE HERO ET LE CONTENU */
-
-.hero + section .legal-content {
-    padding-top: 70px;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 700px) {
-
-    .legal-content {
-        padding-top: 40px;
-        padding-bottom: 50px;
-    }
-
-    .hero + section .legal-content {
-        padding-top: 45px;
-    }
-
-    .legal-content h2 {
-        margin-top: 45px;
-        margin-bottom: 20px;
-    }
-
-    .legal-card {
-        padding: 20px;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-
-}
-.hero-services {
     text-align: center;
 }
 
@@ -1087,43 +163,885 @@ footer a:hover {
 }
 
 .hero-services .flag-language {
-    width: 32px;
-    height: 21px;
-    object-fit: cover;
     display: block;
     flex-shrink: 0;
-}
-/* =========================================
-BOUTONS FLOTTANTS - PAGES ENGLISH UNIQUEMENT
-========================================= */
 
-/* Cachés sur PC */
+    width: 32px;
+    height: 21px;
+
+    object-fit: cover;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   4. BOUTONS
+   ========================================================= */
+
+.btn {
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 15px 35px;
+
+    background: #FFD400;
+    color: #111;
+
+    border: 2px solid transparent;
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: 0 5px 14px rgba(0, 0, 0, .10);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .16);
+}
+
+.btn.secondaire {
+    display: inline-block !important;
+    background: #fff !important;
+    color: #111 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.email {
+    background: #333;
+    color: #fff;
+}
+
+.email:hover {
+    background: #555;
+}
+
+.btn:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #FFD400;
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   5. SECTIONS / TITRES
+   ========================================================= */
+
+section {
+    padding: 80px 20px;
+}
+
+section:nth-of-type(even) {
+    background: #fafafa;
+}
+
+h2 {
+    margin-bottom: 40px;
+
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: -.3px;
+
+    text-align: center;
+}
+
+h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 4px;
+
+    margin: 14px auto 0;
+
+    background: #FFD400;
+    border-radius: 3px;
+}
+
+
+/* =========================================================
+   6. SERVICES
+   ========================================================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 35px 30px;
+
+    background: #fff;
+
+    border: 1px solid #e8e8e8;
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, .06);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+
+    border-color: #FFD400;
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .12);
+}
+
+.icone {
+    margin-bottom: 20px;
+
+    font-size: 45px;
+    line-height: 1;
+}
+
+.card h3 {
+    margin-bottom: 18px;
+    line-height: 1.3;
+}
+
+.card p {
+    margin-bottom: 25px;
+
+    color: #444;
+    line-height: 1.7;
+}
+
+.card .btn {
+    margin-top: auto;
+}
+
+
+/* =========================================================
+   7. ZONE D'INTERVENTION
+   ========================================================= */
+
+.zone-intervention {
+    background: #f4f4f4;
+}
+
+.zone-texte {
+    max-width: 800px;
+
+    margin: 0 auto 40px;
+
+    font-size: 20px;
+    text-align: center;
+}
+
+.zones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+
+    margin-bottom: 40px;
+}
+
+.zone-card {
+    position: relative;
+    overflow: hidden;
+
+    padding: 25px;
+
+    background: #fff;
+
+    border: 1px solid #eee;
+    border-radius: 15px;
+
+    text-align: center;
+    font-weight: bold;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .06);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.zone-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: #FFD400;
+}
+
+.zone-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .11);
+}
+
+.zone-card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.zone-card a:hover {
+    text-decoration: underline;
+}
+
+#zone ul {
+    max-width: 500px;
+    margin: 0 auto;
+
+    font-size: 20px;
+}
+
+#zone a {
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#zone a:hover {
+    color: #FFD400;
+}
+
+.zone-intervention .btn,
+#contact .btn {
+    display: block;
+
+    width: fit-content;
+
+    margin: 30px auto 0;
+}
+
+.btn-centre {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* =========================================================
+   8. GALERIE
+   ========================================================= */
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.photos img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    border: 3px solid #fff;
+    border-radius: 15px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .08);
+
+    transition: transform .3s ease;
+}
+
+.photos img:hover {
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   9. GOOGLE MAP
+   ========================================================= */
+
+.map {
+    height: 350px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+
+/* =========================================================
+   10. AVIS
+   ========================================================= */
+
+.avis {
+    background: #fff;
+}
+
+.avis-box {
+    max-width: 700px;
+
+    margin: 0 auto;
+    padding: 40px;
+
+    background: #fff;
+
+    border: 1px solid #eee;
+    border-top: 4px solid #FFD400;
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 6px 22px rgba(0, 0, 0, .07);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.avis-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .12);
+}
+
+.etoiles {
+    margin-bottom: 20px;
+
+    color: #FFD400;
+
+    font-size: 35px;
+
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .12);
+}
+
+
+/* =========================================================
+   11. CONTACT
+   ========================================================= */
+
+#contact {
+    text-align: center;
+    scroll-margin-top: 120px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   12. RÉSERVATION
+   ========================================================= */
+
+.reservation {
+    padding: 60px 0;
+    text-align: center;
+    scroll-margin-top: 20px;
+}
+
+.form-reservation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    max-width: 600px;
+
+    margin: 30px auto 0;
+    padding: 32px;
+
+    background: #fff;
+
+    border: 1px solid #eee;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 28px rgba(0, 0, 0, .08);
+}
+
+.form-reservation label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+    text-align: left;
+}
+
+.form-reservation input,
+.form-reservation select,
+.form-reservation textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    padding: 12px;
+
+    background: #fff;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.4;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+.form-reservation input[type="date"],
+.form-reservation input[type="time"] {
+    width: calc(100% - 18px);
+    max-width: calc(100% - 18px);
+
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.form-reservation textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-reservation input:focus,
+.form-reservation select:focus,
+.form-reservation textarea:focus {
+    border-color: #FFD400;
+
+    box-shadow: 0 0 0 3px rgba(255, 212, 0, .18);
+
+    outline: none;
+}
+
+.form-reservation .btn {
+    margin: 10px auto 0;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   13. WHATSAPP
+   ========================================================= */
+
+button.btn.whatsapp {
+    display: block;
+
+    width: fit-content;
+
+    margin: 10px auto 0;
+
+    background: #075E54 !important;
+    color: #fff !important;
+
+    border: none;
+}
+
+button.btn.whatsapp:hover {
+    background: #054C45 !important;
+}
+
+button.btn.whatsapp img {
+    display: inline-block;
+
+    width: 22px;
+    height: 22px;
+
+    margin-right: 8px;
+
+    vertical-align: middle;
+}
+
+
+/* =========================================================
+   14. TÉLÉPHONE FLOTTANT
+   ========================================================= */
+
+.phone-mobile {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    z-index: 1000;
+
+    padding: 15px 20px;
+
+    background: #FFD400;
+    color: #111;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+.phone-mobile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .35);
+}
+
+
+/* =========================================================
+   15. BOUTON APPEL MOBILE
+   ========================================================= */
+
+.appel-mobile {
+    display: none;
+}
+
+
+/* =========================================================
+   16. BOUTONS FLOTTANTS — PAGES ANGLAISES
+   ========================================================= */
+
 .appel-mobile-english,
 .whatsapp-mobile {
     display: none;
 }
 
 
-/* MOBILE */
+/* =========================================================
+   17. FOOTER
+   ========================================================= */
+
+footer {
+    padding: 25px 15px;
+
+    background: #111;
+    color: #fff;
+
+    text-align: center;
+
+    border-top: 1px solid #222;
+}
+
+footer .container {
+    padding: 0;
+}
+
+footer p {
+    margin: 6px 0;
+    line-height: 1.4;
+}
+
+footer a {
+    color: #FFD500;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin: 12px 0;
+}
+
+.footer-links a {
+    color: #FFD500;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   18. MENTIONS LÉGALES
+   ========================================================= */
+
+.legal-content {
+    max-width: 900px;
+
+    padding-top: 55px;
+    padding-bottom: 70px;
+}
+
+.legal-content h2 {
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+.legal-content h2:first-child {
+    margin-top: 0;
+}
+
+.legal-content p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.legal-card {
+    margin: 25px 0 40px;
+    padding: 25px 30px;
+
+    background: #f7f7f7;
+
+    border-left: 4px solid #d4a017;
+    border-radius: 12px;
+}
+
+.legal-card p {
+    margin: 10px 0;
+}
+
+.legal-card a,
+.legal-content a {
+    color: inherit;
+}
+
+.hero + section .legal-content {
+    padding-top: 70px;
+}
+
+
+/* =========================================================
+   19. DESKTOP — EFFET HERO
+   ========================================================= */
+
+@media (hover: hover) and (pointer: fine) {
+    .hero .btn:first-child:hover {
+        box-shadow: 0 8px 22px rgba(255, 212, 0, .30);
+    }
+}
+
+
+/* =========================================================
+   20. MOBILE
+   ⚠️ MENU CONSERVÉ
+   ========================================================= */
+
 @media (max-width: 700px) {
 
-    /* ==============================
-       CALL TAXI GRAY
-       ============================== */
+    /* -----------------------------------------------------
+       HEADER / MENU
+       ----------------------------------------------------- */
+
+    .header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+
+        padding: 5px 10px;
+
+        border-radius: 8px;
+    }
+
+    .menu {
+        display: none;
+
+        position: absolute;
+        top: 80px;
+        left: 0;
+
+        z-index: 1000;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        padding: 20px;
+
+        background: #000;
+
+        border-top: 3px solid #FFD400;
+
+        text-align: center;
+    }
+
+    .menu.ouvert {
+        display: flex !important;
+    }
+
+    .menu a {
+        margin: 15px 0;
+        padding: 8px 20px;
+    }
+
+    .logo {
+        height: 60px !important;
+    }
+
+
+    /* -----------------------------------------------------
+       HERO
+       ----------------------------------------------------- */
+
+    .hero {
+        min-height: 500px;
+        padding: 60px 20px;
+
+        background-position: center center;
+    }
+
+    .hero h1 {
+        margin-bottom: 15px;
+
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero .btn {
+        width: 100%;
+        max-width: 320px;
+
+        text-align: center;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTIONS
+       ----------------------------------------------------- */
+
+    section {
+        padding: 60px 18px;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+
+
+    /* -----------------------------------------------------
+       CARTES
+       ----------------------------------------------------- */
+
+    .card {
+        padding: 30px 22px;
+    }
+
+    .zone-card {
+        padding: 20px;
+    }
+
+
+    /* -----------------------------------------------------
+       GALERIE
+       ----------------------------------------------------- */
+
+    .photos img {
+        height: 240px;
+    }
+
+
+    /* -----------------------------------------------------
+       FORMULAIRE
+       ----------------------------------------------------- */
+
+    .form-reservation {
+        padding: 24px 18px;
+    }
+
+
+    /* -----------------------------------------------------
+       BOUTON APPEL MOBILE
+       ----------------------------------------------------- */
+
+    .appel-mobile {
+        display: block !important;
+
+        position: fixed !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 15px !important;
+
+        z-index: 9999;
+
+        width: 100% !important;
+        max-width: none !important;
+
+        box-sizing: border-box !important;
+
+        padding: 14px 20px;
+
+        background: #FFD400 !important;
+        color: #111 !important;
+
+        border-radius: 0;
+
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+
+        box-shadow: 0 -3px 15px rgba(0, 0, 0, .20);
+    }
+
+    .appel-mobile:active {
+        transform: scale(.98);
+
+        box-shadow: 0 3px 10px rgba(0, 0, 0, .25);
+    }
+
+    body {
+        padding-bottom: 80px;
+    }
+
+
+    /* -----------------------------------------------------
+       BOUTON APPEL — ANGLAIS
+       ----------------------------------------------------- */
 
     a.appel-mobile-english {
         display: block !important;
 
         position: fixed !important;
-
-        left: auto !important;
         right: 15px !important;
         bottom: 15px !important;
 
+        z-index: 10000 !important;
+
         width: auto !important;
         max-width: max-content !important;
-
-        height: auto !important;
         min-height: 0 !important;
 
         padding: 14px 20px !important;
@@ -1141,35 +1059,31 @@ BOUTONS FLOTTANTS - PAGES ENGLISH UNIQUEMENT
 
         box-sizing: border-box !important;
 
-        z-index: 10000 !important;
-
-        box-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .25) !important;
     }
 
 
-    /* ==============================
-       WHATSAPP
-       ============================== */
+    /* -----------------------------------------------------
+       WHATSAPP — ANGLAIS
+       ----------------------------------------------------- */
 
     a.whatsapp-mobile {
         display: block !important;
 
         position: fixed !important;
-
-        left: auto !important;
         right: 15px !important;
         bottom: 75px !important;
 
+        z-index: 9999 !important;
+
         width: auto !important;
         max-width: max-content !important;
-
-        height: auto !important;
         min-height: 0 !important;
 
         padding: 14px 20px !important;
 
         background: #25D366 !important;
-        color: white !important;
+        color: #fff !important;
 
         border-radius: 50px !important;
 
@@ -1181,98 +1095,82 @@ BOUTONS FLOTTANTS - PAGES ENGLISH UNIQUEMENT
 
         box-sizing: border-box !important;
 
-        z-index: 9999 !important;
-
-        box-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .25) !important;
     }
 
-}
-/* =========================================
-   AJOUTS VISUELS - DESIGN
-   ========================================= */
 
-/* Soulignement jaune sous les titres */
-h2::after {
-    content: "";
-    display: block;
-    width: 55px;
-    height: 4px;
-    background: #FFD400;
-    border-radius: 3px;
-    margin: 14px auto 0;
-}
-/* Cartes services : petit accent jaune au survol */
-.card:hover {
-    border-color: #FFD400;
-}
-/* Cartes zones : bande jaune supérieure */
-.zone-card {
-    position: relative;
-    overflow: hidden;
-}
+    /* -----------------------------------------------------
+       FOOTER
+       ----------------------------------------------------- */
 
-.zone-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: #FFD400;
-}
-/* Étoiles des avis */
-.etoiles {
-    color: #FFD400;
-    text-shadow: 0 2px 4px rgba(0,0,0,.12);
-}
-/* Petit effet premium sur le bouton principal du HERO */
-@media (hover: hover) and (pointer: fine) {
-    .hero .btn:first-child:hover {
-        box-shadow: 0 8px 22px rgba(255,212,0,.30);
-    }
-}
-/* Ligne jaune sous le HERO */
-.hero {
-    border-bottom: 4px solid #FFD400;
-}
-/* Ombre douce en bas du HERO */
-.hero {
-    box-shadow: inset 0 -40px 60px rgba(0,0,0,.15);
-}
-/* Accent jaune sur les avis */
-.avis-box {
-    border-top: 4px solid #FFD400;
-}
-/* Cadre léger autour des photos */
-.photos img {
-    border: 3px solid white;
-}
-/* =========================================
-   MENU MOBILE - FINITIONS VISUELLES
-   ========================================= */
-
-@media (max-width: 700px) {
-
-    /* Ligne jaune entre le header et le menu */
-    .menu {
-        border-top: 3px solid #FFD400;
+    footer {
+        padding: 18px 10px 75px;
+        font-size: 13px;
     }
 
-    /* Zone de clic plus confortable */
-    .menu a {
-        padding: 8px 20px;
+    footer p {
+        margin: 4px 0;
+        line-height: 1.4;
     }
 
-    /* Bouton ☰ légèrement mieux identifié */
-    .menu-toggle {
-        padding: 5px 10px;
-        border-radius: 8px;
+    .footer-links {
+        gap: 6px;
+        margin: 8px 0;
+        line-height: 1.7;
     }
 
+    .footer-links a {
+        font-size: 14px;
+    }
+
+
+    /* -----------------------------------------------------
+       MENTIONS LÉGALES
+       ----------------------------------------------------- */
+
+    .legal-content {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .hero + section .legal-content {
+        padding-top: 45px;
+    }
+
+    .legal-content h2 {
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+
+    .legal-card {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
 }
-/* Retour visuel au toucher */
+
+
+/* =========================================================
+   21. RETOUR VISUEL AU TOUCHER
+   ========================================================= */
+
 .btn:active,
 .menu a:active,
 .zone-card a:active {
     opacity: .85;
+}
+
+
+/* =========================================================
+   22. ACCESSIBILITÉ — RÉDUCTION DES ANIMATIONS
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
 }
