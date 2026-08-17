@@ -984,8 +984,29 @@ function envoyerMail() {
 
 
     window.location.href = lien;
-}
 
+    if (window.innerWidth > 700) {
+
+    const champDate = document.getElementById("date");
+    const champHeure = document.getElementById("heure");
+
+    if (champDate) {
+        champDate.addEventListener("click", function () {
+            if (typeof this.showPicker === "function") {
+                this.showPicker();
+            }
+        });
+    }
+
+    if (champHeure) {
+        champHeure.addEventListener("click", function () {
+            if (typeof this.showPicker === "function") {
+                this.showPicker();
+            }
+        });
+    }
+
+}
 </script>
 
 </body>
