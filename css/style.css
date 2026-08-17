@@ -644,11 +644,10 @@ h2::after {
 
 .form-reservation input[type="date"],
 .form-reservation input[type="time"] {
-    width: calc(100% - 18px);
-    max-width: calc(100% - 18px);
-
-    padding-left: 8px;
-    padding-right: 8px;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .form-reservation textarea {
@@ -1006,7 +1005,13 @@ footer a:hover {
     .form-reservation {
         padding: 24px 18px;
     }
-
+    .form-reservation input[type="date"],
+    .form-reservation input[type="time"] {
+    width: calc(100% - 18px);
+    max-width: calc(100% - 18px);
+    padding-left: 8px;
+    padding-right: 8px;
+}
 
     /* -----------------------------------------------------
        BOUTON APPEL MOBILE
