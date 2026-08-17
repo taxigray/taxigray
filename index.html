@@ -986,28 +986,35 @@ function envoyerMail() {
     window.location.href = lien;
 }
 /* =========================================================
-   OUVERTURE CALENDRIER / HEURE SUR CLIC
-   UNIQUEMENT SUR ORDINATEUR
+   CLIC SUR TOUT LE CHAMP DATE / HEURE
 ========================================================= */
 
-if (window.innerWidth > 700) {
+document.addEventListener("DOMContentLoaded", function () {
 
     const champDate = document.getElementById("date");
     const champHeure = document.getElementById("heure");
 
-    if (champDate && typeof champDate.showPicker === "function") {
+    if (champDate) {
         champDate.addEventListener("click", function () {
-            this.showPicker();
+            try {
+                this.showPicker();
+            } catch (e) {
+                this.focus();
+            }
         });
     }
 
-    if (champHeure && typeof champHeure.showPicker === "function") {
+    if (champHeure) {
         champHeure.addEventListener("click", function () {
-            this.showPicker();
+            try {
+                this.showPicker();
+            } catch (e) {
+                this.focus();
+            }
         });
     }
 
-}
+});
 </script>
 
 </body>
