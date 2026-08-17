@@ -986,7 +986,8 @@ function envoyerMail() {
     window.location.href = lien;
 }
 /* =========================================================
-   CLIC SUR TOUT LE CHAMP DATE / HEURE
+   CALENDRIER / HEURE
+   CLIC UNIQUEMENT DANS LE CHAMP
 ========================================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -996,20 +997,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (champDate) {
         champDate.addEventListener("click", function () {
-            try {
-                this.showPicker();
-            } catch (e) {
-                this.focus();
+            if (typeof this.showPicker === "function") {
+                try {
+                    this.showPicker();
+                } catch (e) {}
             }
         });
     }
 
     if (champHeure) {
         champHeure.addEventListener("click", function () {
-            try {
-                this.showPicker();
-            } catch (e) {
-                this.focus();
+            if (typeof this.showPicker === "function") {
+                try {
+                    this.showPicker();
+                } catch (e) {}
             }
         });
     }
