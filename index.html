@@ -984,25 +984,26 @@ function envoyerMail() {
 
 
     window.location.href = lien;
+}
+/* =========================================================
+   OUVERTURE CALENDRIER / HEURE SUR CLIC
+   UNIQUEMENT SUR ORDINATEUR
+========================================================= */
 
-    if (window.innerWidth > 700) {
+if (window.innerWidth > 700) {
 
     const champDate = document.getElementById("date");
     const champHeure = document.getElementById("heure");
 
-    if (champDate) {
+    if (champDate && typeof champDate.showPicker === "function") {
         champDate.addEventListener("click", function () {
-            if (typeof this.showPicker === "function") {
-                this.showPicker();
-            }
+            this.showPicker();
         });
     }
 
-    if (champHeure) {
+    if (champHeure && typeof champHeure.showPicker === "function") {
         champHeure.addEventListener("click", function () {
-            if (typeof this.showPicker === "function") {
-                this.showPicker();
-            }
+            this.showPicker();
         });
     }
 
